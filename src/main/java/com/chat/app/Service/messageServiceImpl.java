@@ -101,7 +101,7 @@ public class messageServiceImpl implements messageService {
 
 		if (orgMessage.getContent().equals("")) {
 	
-			message.setContent("Please select the Question first ");
+			message.setContent("Please select the Question first");
 			logger.info("send response previous request Null " +message.getContent());
 			return message;
 		}
