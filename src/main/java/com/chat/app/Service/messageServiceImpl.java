@@ -83,13 +83,6 @@ public class messageServiceImpl implements messageService {
 			logger.info("Get message for Null content " +message.getContent());
 			return message;
 		}
-		String messageform=message.getContent().toLowerCase();
-		if(!messageform.contains("addition"))
-		{
-			message.setContent("This system only allowed addition not other operations");
-			logger.info("Get message for wrong question content " +message.getContent());
-			return message;
-		}
 		// TODO Auto-generated method stub
 		List<String> questions = Arrays.asList(
 				"Here you go , solve the problem Question :\"Print the sum of 9,5 and 3\" ",
